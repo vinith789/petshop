@@ -38,6 +38,3 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     echo "wrong email or password";
   }
 }
-
-
-?>
