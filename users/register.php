@@ -7,5 +7,5 @@
 
 <?php
 
-require("../html/sign.html");
+require("./html/sign.html");
 ?>

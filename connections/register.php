@@ -29,6 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Error: " . $query . "<br>" . mysqli_error($conn);
     }
 
-    header("Location: ../php/login.php");
+    header("Location: ../users/login.php");
 }
 ?>

@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     }
 
 
-    header("Location: ../php/main.php");
+    header("Location: ../users/main.php");
   }
   else{
     echo "wrong email or password";

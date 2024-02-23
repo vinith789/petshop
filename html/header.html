@@ -1,5 +1,5 @@
 <header>
-  <nav class="p-5 bg-gradient-to-r  from-rose-300 to-blue-400 shadow md:flex md:items-center md:justify-between">
+  <nav class="p-5 bg-gradient-to-r from-rose-300 to-blue-400 shadow md:flex md:items-center md:justify-between">
 
     <div>
         <span class="text-2xl font-serif cursor-pointer">
@@ -10,47 +10,61 @@
         </span>
     </div>
 
-    <ul class="md:flex md:items-center">
-        <li class="mx-4 my-6 md:my-0 ">
-          <a
-            class="text-xl hover:text-white duration-150 active"
-            href="../php/main.php"
-          >Home</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0 ">
-          <a
-            class="text-xl hover:text-white duration-150 active:"
-            href="../pages/birds.php"
-          >Birds</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0 ">
-          <a
-            class="text-xl hover:text-white duration-150"
-            href="../pages/dogs.php"
-          >Dogs</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0 ">
-          <a
-            class="text-xl hover:text-white duration-150"
-            href="../pages/fishs.php"
-          >Fishs</a>
-        </li>
+    <div class="text-center">
+      <ul class="md:flex md:items-center">
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150 active"
+              href="../php/main.php"
+            >Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150 active:"
+              href="../pages/birds.php"
+            >Birds</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150"
+              href="../pages/dogs.php"
+            >Dogs</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150"
+              href="../pages/fishs.php"
+            >Fishs</a>
+          </li>
 
-        <li class="mx-4 my-6 md:my-0 ">
-          <a
-            class="text-xl hover:text-white duration-150"
-            href="../pages/about.php"
-          >About</a>
-        </li>
-    </ul>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150"
+              href="../pages/about.php"
+            >About</a>
+          </li>
+      </ul>
+    </div>
 
-    <button class="bg-green-800 text-white font-serif duration-500 px-6 py-2 mx-2 hover:bg-green-500 rounded">
-        <a href="../php/login.php">Login</a>
-    </button>
+    <div class="text-center">
+      <button class="bg-green-800 text-white font-serif duration-500 px-6 py-2 mx-2 hover:bg-green-500 rounded" onclick="myFunction()">
+          <a href="../users/login.php">Login</a>
+      </button>
 
-    <button class="bg-red-500 text-white font-serif duration-500 px-6 py-2 mx-2 hover:bg-red-400 rounded" hidden>
-        <a href="../php/login.php">Logout</a>
-    </button>
-
+      <button class="bg-red-500 text-white font-serif duration-500 px-6 py-2 mx-2 hover:bg-red-400 rounded" id="logout">
+          <a href="../users/login.php">Logout</a>
+      </button>
+    </div>
+      
   </nav>
 </header>
+<script>
+  function myFunction() {
+    var x = document.getElementById("login");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+</script>
