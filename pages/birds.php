@@ -6,7 +6,11 @@
 ?>
 
 
-<?php require("./page/birds.html"); ?>
+<?php
+    include 'config.php';
+    $select = mysqli_query($conn, "SELECT * FROM products");
+    require("./page/birds.html");
+?>
 
 <?php
 require("../html/footer.html");
